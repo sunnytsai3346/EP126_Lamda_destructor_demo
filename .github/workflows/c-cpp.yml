@@ -41,3 +41,7 @@ jobs:
         run: |
           cd build
           ctest --output-on-failure
+      # Step 5: Run the compiled program
+      - name: Run the compiled program
+        run: |
+          ./build/main    
